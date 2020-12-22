@@ -12,6 +12,11 @@ import JenkinsLogo from "./images/jenkins.svg";
 import DockerLogo from "./images/docker.svg";
 import APItestingLogo from "./images/api.svg";
 import PostmanLogo from "./images/postman.svg";
+import ReactLogo from "./images/react.svg";
+import JMterLogo from "./images/jmeter.svg";
+import ReactNativeLogo from "./images/react.svg";
+import htmlLogo from "./images/html.svg";
+import GitLogo from './images/git.svg'
 class Resume extends Component {
   render() {
     return (
@@ -28,7 +33,7 @@ const DATA = {
     education: {
       university: "Pune University",
       degree: "Bachelor of Information Technology",
-      duration: "July 2011 - July 2014",
+      duration: "July 2010 - July 2014",
     },
     languages: [
       {
@@ -37,9 +42,9 @@ const DATA = {
         logo: SeleniumLogo,
       },
       {
-        name: "API testing",
+        name: "Jmeter",
         proficiency: 0.8,
-        logo: APItestingLogo,
+        logo: JMterLogo,
       },
       {
         name: "JavaScript",
@@ -50,6 +55,11 @@ const DATA = {
         name: "Java",
         proficiency: 0.7,
         logo: JavaLogo,
+      },
+      {
+        name:"GIT",
+        proficiency: 0.7,
+        logo: GitLogo
       },
       {
         name: "Python",
@@ -76,29 +86,39 @@ const DATA = {
         proficiency: 0.8,
         logo: PostmanLogo,
       },
+      {
+        name: "Html & CSS",
+        proficiency: 0.4,
+        logo: htmlLogo,
+      },
     ],
     frameworks: [
-      "Cucumber",
+      "Selenium-Java",
       "WebdriverIO",
       "testNg",
-      "Maven",
+      "Pytest",
+      "Cypress",
+      "Nightwatch",
+      "Jasmine",
+      "Pytest-request",
+      "Mocha",
       "Protractor",
-      "Behat",
-      "CasperJS",
-      "Selenoid",
+      "BDD"
     ],
     tools: [
       "JMeter",
-      "API testing",
+      "GIT",
       "Browserstack",
       "Splunk",
       "Sentry",
       "My SQL workbench",
       "Jenkins",
       "Docker",
-      "Allure",
       "Percy",
       "ServiceNow",
+      "Selenoid",
+      "Kubernetes",
+      "Openshift"
     ],
     links: [
       {
@@ -125,10 +145,9 @@ const DATA = {
         icon: "linkedin",
       },
     ],
-    hobby: 
-      {
-          hobby: "Hiking, Cycling, Reading, PS",
-      },
+    hobby: {
+      hobby: "Hiking, Cycling, Reading, PS",
+    },
   },
   main: {
     name: "Arpit Paliwal",
@@ -137,10 +156,6 @@ const DATA = {
       nickname: "",
       name: "Software Engineering",
     },
-    interests: [
-      "Following technological advancements; scripting; digital art; Project Euler",
-      "Over-engineering resumes using React.js",
-    ],
     companies: [
       {
         name: "Redhat",
@@ -148,14 +163,14 @@ const DATA = {
         range: "March 2018, November 2020",
         projects: [
           {
-            name: "Portal case management",
+            name: "Front end Web automation",
             tools: [
               "WebdriverIO",
               "Javascript",
               "Jenkins",
               "Docker",
-              "JMeter",
-              "API testing",
+              "Selenium Grid",
+              "GIT"
             ],
             achievements: [
               <span>
@@ -166,7 +181,6 @@ const DATA = {
                 Actively involved in making key decisions with stakeholders and
                 developers for the application
               </span>,
-
               <span>Scrum master for daily updates.</span>,
               <span>
                 Involved in debugging issues customer is facing by going through
@@ -180,11 +194,7 @@ const DATA = {
                 Created end to end test pipeline using selenium grid and docker
                 which runs daily test excecution over Jenkins.
               </span>,
-              <span>
-                Created dashboard which shows stakeholders status and health of
-                application by consuming different rest API from Jenkins, GIT,
-                Browserstack, internal APIs
-              </span>,
+
               <span>
                 Wrote test case parameters, including test scripts and
                 automation guidelines.
@@ -200,7 +210,7 @@ const DATA = {
             ],
           },
           {
-            name: "Supportshell : CLI tool for downloading attachments",
+            name: "CLI application testing using Pytest",
             tools: ["Python", "Basic shell scripting"],
             achievements: [
               <span>
@@ -212,6 +222,26 @@ const DATA = {
                 Created CI/CD pipeline which helps in running test over every
                 code push
               </span>,
+            ],
+          },
+          {
+            name: "Backend API Testing",
+            tools: ["JMeter", "Postman", "MySQL", "Pytest request"],
+            achievements: [
+              <span>Created and maintained tests for api functionalties</span>,
+              <span>Used JMeter for API automation</span>,
+              <span>
+                Involved in requirement gathering from frontend team Developers
+                and Stakeholders
+              </span>,
+              <span>
+                Created CI/CD pipeline which helps in running test over Jenkins
+                and send daily reports with concerned teams
+              </span>,
+              <span>
+                Database testing to check proper data is getting saved in DB
+              </span>,
+              <span>Debugged if any issue occurs using MySQL and Splunk</span>,
             ],
           },
         ],
@@ -242,8 +272,67 @@ const DATA = {
           },
         ],
       },
+      {
+        name: "Extra activities",
+        title: "",
+        range: "",
+
+        projects: [
+          {
+            name: "",
+            tools: ["Javascript", "ReactJS", "React native"],
+            achievements: [
+              <span>
+                I have been working various personal projects and done React
+                boot camp to gain good level of understanding in web
+                development. My previous experience as front and back end
+                testing have given me advantage.
+              </span>,
+              <span>
+                Designed web application in React to check various test metrices
+                using various public APIs like Git, Jenkins, Browserstack, etc.
+              </span>,
+              <span>
+                Created Hotel reservation capstone project using React and React
+                context api.
+              </span>,
+              <span>
+                Created mobile application using React native for tracking
+                weather forecast using public weather forecast apis.
+              </span>,
+              <span>
+                Created React application for git hub jobs as capstone project
+              </span>,
+              <span>
+                Created React application for searching images using pixaby api.
+              </span>,
+                <span>
+                Scrimba certification for ReactJS bootcamp
+              </span>,
+            ],
+          },
+        ],
+      },
     ],
     projects: [
+      // {
+      //   name: "Created web applications",
+      //   tools: ["ReactJS", "React-Native", "Html", "CSS"],
+      //   github: "https://github.com/PaliwalArpit?tab=repositories",
+      //   achievements: [
+      //     <span>
+      //       Created dashboard which shows stakeholders status and health of
+      //       application by consuming different rest API from Jenkins, GIT,
+      //       Browserstack, internal APIs
+      //     </span>,
+      //     <span>Resume is created using ReactJS</span>,
+      //     <span>
+      //       Simple web applications : 1] Hotel reservation application, 2]
+      //       Weather forecast mobile app 3]Expense tracker
+      //     </span>,
+      //     <span>Scrimba Certification in ReactJS</span>,
+      //   ],
+      // },
       {
         name: "Speaker at QEcampX",
         tools: ["Selenium", "Chromedevtools"],

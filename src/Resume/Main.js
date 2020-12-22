@@ -32,7 +32,7 @@ const Main = ({ companies, projects, name, program }) => (
       })
     }
    
-    <MainHeading title="Extra activities" />
+    <MainHeading title="Spoke at: " />
     {
       projects.map((project, i) => (
         <Section color={Constant.COLORS.PRIMARY().toString()} key={i}>

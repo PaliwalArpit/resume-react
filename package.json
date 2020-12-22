@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PaliwalArpit/resume-react"
+    "url": "https://github.com/ramanpreetnara/resume-react.git"
   },
   "license": "CC0-1.0",
-  "author": "Arpit",
-  "homepage": "https://github.com/PaliwalArpit/resume-react",
+  "author": "Ramanpreet Nara <ramanpreetnara@gmail.com> (http://github.com/ramanpreetnara)",
+  "homepage": "https://github.com/ramanpreetnara/resume-react",
   "devDependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
