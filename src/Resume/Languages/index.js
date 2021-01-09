@@ -4,7 +4,7 @@ import SidebarHeading from '../SidebarHeading';
 
 const Languages = ({ data: languages }) => (
   <section style={style.main}>
-    <SidebarHeading>Languages</SidebarHeading>
+    <SidebarHeading>Technologies</SidebarHeading>
     <div>
       {(languages).map((language) => (
         <Language

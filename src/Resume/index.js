@@ -12,10 +12,7 @@ import JenkinsLogo from "./images/jenkins.svg";
 import DockerLogo from "./images/docker.svg";
 import APItestingLogo from "./images/api.svg";
 import PostmanLogo from "./images/postman.svg";
-import ReactLogo from "./images/react.svg";
 import JMterLogo from "./images/jmeter.svg";
-import ReactNativeLogo from "./images/react.svg";
-import htmlLogo from "./images/html.svg";
 import GitLogo from './images/git.svg'
 class Resume extends Component {
   render() {
@@ -77,7 +74,7 @@ const DATA = {
         logo: DockerLogo,
       },
       {
-        name: "SQL",
+        name: "My SQL",
         proficiency: 0.7,
         logo: SQLLogo,
       },
@@ -87,10 +84,10 @@ const DATA = {
         logo: PostmanLogo,
       },
       {
-        name: "Html & CSS",
-        proficiency: 0.4,
-        logo: htmlLogo,
-      },
+        name: "Rest assured",
+        proficiency: 0.5,
+        logo: APItestingLogo,
+      }
     ],
     frameworks: [
       "Selenium-Java",
@@ -160,10 +157,10 @@ const DATA = {
       {
         name: "Redhat",
         title: "Senior SDET",
-        range: "March 2018, November 2020",
+        range: "March 2018 - Present",
         projects: [
           {
-            name: "Front end Web automation",
+            name: "UI Automation",
             tools: [
               "WebdriverIO",
               "Javascript",
@@ -171,77 +168,64 @@ const DATA = {
               "Docker",
               "Selenium Grid",
               "GIT"
-            ],
+             ],
             achievements: [
               <span>
-                Designed complete test architecture of customer facing
-                application in terms of UI and Backend from scratch.
+                Working as a <b>QA lead</b> in the Agile project, leading Scrums, Spring Planning and Retrospectives.
               </span>,
               <span>
-                Actively involved in making key decisions with stakeholders and
-                developers for the application
+                Worked as a <b>Software Development Engineer in Test (SDET)</b>, I involved in implementing the framework, developing automation scripts for the new User stories and maintain and run the Regression Scripts.
               </span>,
-              <span>Scrum master for daily updates.</span>,
+              <span>Worked on <b>WebdriverIO</b> (nodeJS framework) using <b>ES6.</b></span>,
+              <span>Worked with <b>Selenium Grid</b> for running multiple tests across different browsers, operating systems, and
+              machines in parallel.</span>,
               <span>
                 Involved in debugging issues customer is facing by going through
-                various systems like Splunk , Database, Sentry logs etc.
+                various systems like <b>Splunk,Pendo,Sentry logs</b>.
               </span>,
               <span>
-                Leading all technical efforts in automation and QE space inside
-                project.
+               Worked on <b>Git</b> for version control, <b>Jenkins</b> for Continuous Integration and <b>Jira</b> for
+                project management and defect-tracking.
               </span>,
               <span>
-                Created end to end test pipeline using selenium grid and docker
-                which runs daily test excecution over Jenkins.
-              </span>,
-
+              Actively involved in making key decisions with stakeholders and
+              developers for the application.
+            </span>,
+            <span><b>Scrum master</b> for daily updates.</span>,
+            ],
+          },
+          {
+            name: "API Automation",
+            tools: ["JMeter", "Postman", "MySQL", "Pytest request"],
+            achievements: [
+              <span>Created and maintained test automation for Rest APIs using <b>Jmeter</b></span>,
               <span>
-                Wrote test case parameters, including test scripts and
-                automation guidelines.
+                Created <b>CI/CD pipelines</b> which helps in running test over <b>Jenkins</b>
+                and send daily reports with concerned teams
               </span>,
+              <span><b>Performace</b> and Load testing using <b>Jmeter.</b></span>,
               <span>
-                Integrated collected data into business process enhancements to
-                address ongoing business goals.
+                Experienced with <b>MySQL</b> for testing data flow from application.
               </span>,
+              <span>Debugged application issues occurs using <b>Splunk.</b></span>,
               <span>
-                Defined and tracked quality assurance metrics, including test
-                results, defect counts and performance discrepancies.
+                Involved in requirement gathering from frontend team Developers
+                and Stakeholders.
               </span>,
             ],
           },
           {
-            name: "CLI application testing using Pytest",
+            name: "CLI - Pytest automation",
             tools: ["Python", "Basic shell scripting"],
             achievements: [
               <span>
-                Created python based test framework for running commands
+                Worked on <b>Pytest</b> which Python based testing library.
               </span>,
-              <span>Used python subprocess library to do automation</span>,
-              <span>Wrote basic shell script to excecute tests</span>,
+              <span>Experienced in <b>Linux and Shell scripting</b> to automate CLI based tools.</span>,
               <span>
-                Created CI/CD pipeline which helps in running test over every
-                code push
+                Created <b>CI/CD</b> pipeline which helps in running test over every
+                code push on <b>Gitlab.</b>
               </span>,
-            ],
-          },
-          {
-            name: "Backend API Testing",
-            tools: ["JMeter", "Postman", "MySQL", "Pytest request"],
-            achievements: [
-              <span>Created and maintained tests for api functionalties</span>,
-              <span>Used JMeter for API automation</span>,
-              <span>
-                Involved in requirement gathering from frontend team Developers
-                and Stakeholders
-              </span>,
-              <span>
-                Created CI/CD pipeline which helps in running test over Jenkins
-                and send daily reports with concerned teams
-              </span>,
-              <span>
-                Database testing to check proper data is getting saved in DB
-              </span>,
-              <span>Debugged if any issue occurs using MySQL and Splunk</span>,
             ],
           },
         ],
@@ -252,22 +236,17 @@ const DATA = {
         range: "Jan 2015, March 2018",
         projects: [
           {
-            name: "ServiceNow",
-            tools: ["Selenium", "Java", "Maven", "testNg", "Cucumber"],
+            name: "UI Automation - ServiceNow",
+            tools: ["Selenium", "Java", "Maven", "TestNg", "Cucumber"],
             achievements: [
-              <span>Worked on the test automation of ServiceNow.</span>,
-              <span>
-                Wrote test case parameters, including test scripts and
-                automation guidelines.
+              <span>Worked on the test automation of <b>ServiceNow.</b></span>,
+              <span>Developed TEST Frameworks using <b>TestNG/ Junit, ANT/MAVEN</b> build tools.</span>,
+              <span>Created Automation Test scripts using <b>Cucumber</b> frame work with selenium-Webdriver and Page objects.
               </span>,
-              <span>
-                Operated under Agile and Scrum frameworks to complete releases
-                every 3 weeks and well-organized sprints.
-              </span>,
-              <span>
-                Reduced overall testing hours 90% by writing and optimizing
-                automation test scripts in Selenium.
-              </span>,
+              <span>Experience in implementing the <b>Page Object Model (POM)</b> by creating element for each page object and reused
+              all the objects in various scripts.</span>,
+              <span>Experience in writing good quality object-oriented code for testing purposes by following industry standard java
+              coding standards.</span>
             ],
           },
         ],
@@ -280,59 +259,33 @@ const DATA = {
         projects: [
           {
             name: "",
-            tools: ["Javascript", "ReactJS", "React native"],
+            tools: ["Devops tools","Javascript", "ReactJS", "React native"],
             achievements: [
               <span>
-                I have been working various personal projects and done React
-                boot camp to gain good level of understanding in web
-                development. My previous experience as front and back end
-                testing have given me advantage.
-              </span>,
-              <span>
-                Designed web application in React to check various test metrices
-                using various public APIs like Git, Jenkins, Browserstack, etc.
-              </span>,
-              <span>
-                Created Hotel reservation capstone project using React and React
-                context api.
-              </span>,
-              <span>
-                Created mobile application using React native for tracking
-                weather forecast using public weather forecast apis.
-              </span>,
-              <span>
-                Created React application for git hub jobs as capstone project
-              </span>,
-              <span>
-                Created React application for searching images using pixaby api.
-              </span>,
-                <span>
-                Scrimba certification for ReactJS bootcamp
-              </span>,
+                Proven skills in Devops tools like <b>Kubernetes, AWS, Openshift, Docker and Jenkins.</b>
+                </span>,
+             <span>
+              <a href="https://react-hotel-reservation-app.herokuapp.com/">Hotel reservation app</a> : Created Hotel reservation capstone project using React and React
+              context api.
+            </span>,
+            <span>
+               <a href="https://react-hotel-reservation-app.herokuapp.com/">Github job search app</a> : 
+              Created React application for git hub jobs project
+            </span>,
+            <span>
+               <a href="https://pixaby-image-search-react.herokuapp.com/">Image search app</a> : 
+              Created React application for searching images using pixaby api.
+            </span>,
+             <span>
+             <a href="https://react-expense-tracker-demo.herokuapp.com/">Expense tracker app</a> : 
+            Expense tracker using React and React context api
+          </span>,
             ],
           },
         ],
       },
     ],
     projects: [
-      // {
-      //   name: "Created web applications",
-      //   tools: ["ReactJS", "React-Native", "Html", "CSS"],
-      //   github: "https://github.com/PaliwalArpit?tab=repositories",
-      //   achievements: [
-      //     <span>
-      //       Created dashboard which shows stakeholders status and health of
-      //       application by consuming different rest API from Jenkins, GIT,
-      //       Browserstack, internal APIs
-      //     </span>,
-      //     <span>Resume is created using ReactJS</span>,
-      //     <span>
-      //       Simple web applications : 1] Hotel reservation application, 2]
-      //       Weather forecast mobile app 3]Expense tracker
-      //     </span>,
-      //     <span>Scrimba Certification in ReactJS</span>,
-      //   ],
-      // },
       {
         name: "Speaker at QEcampX",
         tools: ["Selenium", "Chromedevtools"],
